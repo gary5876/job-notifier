@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────
+# 구직 조건 — 조사로직이 이 파일을 기준으로 걸러낸다.
+# 아직 미확정(TODO). 채팅으로 주신 조건으로 채워집니다.
+# ─────────────────────────────────────────────
+
+# 직무 (하나 이상). 예: 백엔드, 프론트엔드, 풀스택, 데브옵스, ML 엔지니어
+roles:
+  - "TODO: 직무"
+
+# 대상 지역 — 국내/해외 모두 조사. 해당하는 것만 남기세요.
+regions:
+  - kr        # 국내
+  - global    # 해외 (LinkedIn/Indeed/Wellfound 등)
+  - remote    # 원격 (국가 무관 풀리모트)
+
+# 근무지 세부 (도시/국가). 예: 서울, 판교, 도쿄, 싱가포르, 미국(원격)
+locations:
+  - "TODO: 지역"
+
+# 해외 지원 시 고려사항
+overseas:
+  visa_sponsorship_required: null   # true면 비자 스폰서 제공 공고만
+  languages: ["한국어", "영어"]      # 가능 언어 (영어 필수 공고 판단용)
+
+# 고용 형태
+employment_type: "정규직"
+
+# 경력 (년). 해당 없으면 null
+experience_years:
+  min: null
+  max: null
+
+# 보유/희망 기술스택 — 가점 요소 (필수 아님)
+skills:
+  - "TODO: 기술스택"
+
+# 희망 최소 연봉. 통화 함께 표기. 없으면 null (예: "6000만원", "USD 120k")
+salary_min: null
+
+# 제외 키워드 — 이 단어가 공고에 있으면 스킵. 예: "병역특례", "인턴", "계약직"
+exclude_keywords: []
+
+# 매칭 민감도: strict(조건 대부분 충족) | normal(핵심 직무 일치) | loose(관련성 있으면)
+match_mode: "normal"

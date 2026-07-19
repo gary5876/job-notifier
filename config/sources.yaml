@@ -1,0 +1,67 @@
+# ─────────────────────────────────────────────
+# 조사 대상 — 조사로직(research/guide.md)이 여기를 훑는다.
+# 두 트랙을 한 파일에서 track 필드로 구분한다.
+#   track: site    → 트랙1: 채용 사이트에서 조건으로 넓게 검색
+#   track: company → 트랙2: 회사 채용 페이지 직접 모니터링
+# region: kr(국내) | global(해외) | remote(원격 특화)
+# ─────────────────────────────────────────────
+
+# ── 트랙1: 채용 사이트 ──────────────────────────
+sites:
+  # 국내
+  - name: "원티드"
+    url: "https://www.wanted.co.kr/"
+    region: kr
+    hint: "개발 직무 정리 잘 됨"
+  - name: "점핏 (Jumpit)"
+    url: "https://www.jumpit.co.kr/"
+    region: kr
+    hint: "개발자 특화"
+  - name: "잡코리아"
+    url: "https://www.jobkorea.co.kr/"
+    region: kr
+    hint: ""
+  - name: "사람인"
+    url: "https://www.saramin.co.kr/"
+    region: kr
+    hint: ""
+
+  # 해외 / 글로벌
+  - name: "LinkedIn Jobs"
+    url: "https://www.linkedin.com/jobs/"
+    region: global
+    hint: "외국계·글로벌 전반"
+  - name: "Indeed"
+    url: "https://www.indeed.com/"
+    region: global
+    hint: "국가별 도메인 존재"
+  - name: "Wellfound (AngelList Talent)"
+    url: "https://wellfound.com/jobs"
+    region: global
+    hint: "스타트업 중심"
+
+  # 원격 특화
+  - name: "We Work Remotely"
+    url: "https://weworkremotely.com/"
+    region: remote
+    hint: "풀리모트"
+  - name: "RemoteOK"
+    url: "https://remoteok.com/"
+    region: remote
+    hint: "풀리모트, 태그 검색"
+
+# ── 트랙2: 회사 직접 공고 ────────────────────────
+companies:
+  # 예시 (실제 관심 회사로 교체/추가)
+  - name: "토스 (비바리퍼블리카)"
+    url: "https://toss.im/career/jobs"
+    region: kr
+    hint: ""
+  - name: "당근"
+    url: "https://about.daangn.com/jobs/"
+    region: kr
+    hint: ""
+  # - name: "Stripe"
+  #   url: "https://stripe.com/jobs/search"
+  #   region: global
+  #   hint: "원격 가능 포지션 많음"
